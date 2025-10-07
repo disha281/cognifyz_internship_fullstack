@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submission Result</title>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 28px;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: #ff80d9;
+        margin-top: 150px;
+      }
+      p {
+        color: #183059;
+        font-size: 32px;
+      }
+      a {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 20px;
+        text-decoration: none;
+        color: #e66fbc;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank you for visiting us, <%= name %>!</h1>
+    <p>We received your submission 🎉</p>
+    <p><strong>Name:</strong> <%= name %></p>
+    <p><strong>Email:</strong> <%= email %></p>
+    <a href="/">Go Back</a>
+  </body>
+</html>
