@@ -1,0 +1,27 @@
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.list-group-item {
+  transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f0f0f0;
+}
