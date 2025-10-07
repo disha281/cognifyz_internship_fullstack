@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">My Chatbot</div>
+
+      <div class="chat-body" id="chatBody">
+        <div class="bot-msg">
+          Hello! This is my first chatbot.How can I help you today?
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script>
+      function sendMessage() {
+        const input = document.getElementById("userInput");
+        const chatBody = document.getElementById("chatBody");
+        const userText = input.value.trim();
+
+        if (userText === "") return;
+
+        const userMsg = document.createElement("div");
+        userMsg.classList.add("user-msg");
+        userMsg.innerText = userText;
+        chatBody.appendChild(userMsg);
+
+        const botMsg = document.createElement("div");
+        botMsg.classList.add("bot-msg");
+        botMsg.innerText = "You said: " + userText;
+        setTimeout(() => {
+          chatBody.appendChild(botMsg);
+          chatBody.scrollTop = chatBody.scrollHeight;
+        }, 500);
+
+        input.value = "";
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
