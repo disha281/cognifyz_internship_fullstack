@@ -6,7 +6,7 @@
 - Set up a basic Node.js server using Express
 - Used EJS for server-side rendering
 
-- 
+
 #  Task 2: Inline Styles and Server-Side Validation
 - Expanded form complexity and added inline JavaScript validation
 - Implemented server-side validation logic
@@ -29,7 +29,7 @@
 - Built RESTful API endpoints for CRUD operations
 - Connected frontend to backend using fetch API
 - Displayed dynamic data on the frontend
-- 
+
 
 #  Task 6: Database Integration and User Authentication
 - Integrated MongoDB using Mongoose
